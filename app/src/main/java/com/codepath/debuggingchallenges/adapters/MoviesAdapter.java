@@ -41,7 +41,6 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
     }
 
     public MoviesAdapter(List<Movie> movies) {
-
         this.movies = movies;
     }
 
