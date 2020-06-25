@@ -9,6 +9,7 @@ import com.codepath.debuggingchallenges.R;
 
 public class ToolbarActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
