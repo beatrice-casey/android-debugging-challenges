@@ -6,11 +6,13 @@ import android.widget.TextView;
 
 import com.codepath.debuggingchallenges.R;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class CurrentDayActivity extends AppCompatActivity {
 
     TextView tvDay;
+    Calendar cal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +22,9 @@ public class CurrentDayActivity extends AppCompatActivity {
         tvDay.setText(getDayOfMonth());
     }
 
-    private int getDayOfMonth() {
-        Calendar cal = Calendar.getInstance();
-        return cal.get(Calendar.DAY_OF_MONTH);
+    private String getDayOfMonth() {
+        cal = Calendar.getInstance();
+        return Integer.toString(cal.get(Calendar.DAY_OF_MONTH));
+
     }
 }
