@@ -2,10 +2,19 @@ package com.codepath.debuggingchallenges.activities;
 
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.os.Bundle;
 import android.view.View;
 
+import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.debuggingchallenges.R;
+import com.codepath.debuggingchallenges.adapters.MoviesAdapter;
+import com.codepath.debuggingchallenges.models.Movie;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
     private void launchActivity(Class klass) {
